@@ -109,16 +109,19 @@
         <form action="#">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" required 
+                    id = "fullname" >
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" placeholder="Email Address" required 
+                    id ="email">
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" required 
+                    id = "subject">
                 </div>
                 <div class="textarea-field">
-                    <textarea name = "" id="" cols="30" rows = "10" placeholder="Your Message" required></textarea>
+                    <textarea name = "" id="message" cols="30" rows = "10" placeholder="Your Message" required></textarea>
                 </div>
         </div>
             <div class="btn-box btns">
@@ -126,7 +129,8 @@
             </div>
         </form>
     </section> 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 </html>
