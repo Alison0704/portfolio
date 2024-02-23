@@ -89,6 +89,7 @@ display: none;
 section{
 min-height: 100vh;
 padding: 10rem 9% 2rem;
+position: relative;
 }
 /* home section */
 /* about me section */
@@ -131,43 +132,52 @@ gap: 2rem;
 margin-top: 2rem;
 }
 /* skills section */
-.skills-column .brain-section{
-position: relative;
-display: block;
-justify-content: center;
-align-items: center;
-align-content: center;
-padding-bottom: 5rem;
-margin-top: 2em;
-}
-.skills-column .brain-section img{
-position:relative;
+.skills-content-column{
 display: flex;
-justify-content: center;
-top: 0;
-z-index: 2;
-overflow: scroll;
+flex-direction: column;
+align-items: center;
+margin: 1.5rem;
+}
+.warning {
+    font-size: small;
+    color: var(--main-color);
+}
+.section-name{
+font-size: 3rem;
+margin: 2rem;
+color: var(--text-color);
 }
 /* Brain sections */
-.brain{
-    content: url(Assets/Brain/brain-whole.png);
+.main-brain{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 40%;
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    opacity: 0.8s;
+    -webkit-filter: grayscale(80%); 
+    filter: grayscale(90%);
+    z-index: 0; 
 }
-.brain:hover{
-    opacity: 0.5;
+.big-brain{
+position: relative;
 }
-#verilog{
-    content: url(Assets/Brain/brain-verilog:VHDL.png);
-    position: absolute;
-    width: 15%;
-    height: 25%;
-    opacity: 0;
-
+.big-brain-component{
+   position: absolute;
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    opacity: 0.8s;
+    -webkit-filter: grayscale(70%); 
+    filter: grayscale(60%);
+    z-index: 0;
+}
+.img_front{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    opacity: 1;
+    -webkit-filter: none; 
+    filter: none;
+    z-index: 1;
 }
 /* projects section */
 /* experience section */
