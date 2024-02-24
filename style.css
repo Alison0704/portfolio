@@ -58,7 +58,7 @@ display:flex;
 justify-content: space-between;
 align-items: center;
 z-index: 100;
-background: var(--second-bg-color);
+background: transparent;
 }
 
 .logo{
@@ -89,9 +89,12 @@ display: none;
 section{
 min-height: 100vh;
 padding: 10rem 9% 2rem;
-position: relative;
 }
 /* home section */
+.home{
+background-color: #0b4457;
+}
+
 /* about me section */
 .about-content{
 display: flex;
@@ -132,6 +135,58 @@ gap: 2rem;
 margin-top: 2rem;
 }
 /* skills section */
+.skills{
+    margin-bottom: 10rem;
+}
+.skills-details{
+    display: flex;
+    flex-direction: column;
+}
+.skills-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 5rem;
+}
+#Electrical, #Software, #Music, #Art{
+    border: 0.2rem solid var(--main-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+}
+#Electrical:hover, #Software:hover, #Music:hover, #Art:hover{
+    background: #0b4457;
+    transition: all 0.3s ease;
+}
+.resume{
+    background-color: var(--bg-color);
+    margin: 1.5rem;
+    color: var(--text-color);
+    border:var(--main-color) 0.2rem solid;
+
+}
+.resume:hover{
+    background: var(--main-color);
+    transition: all 0.3s ease;
+}
+.skill-text{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+
+}
+.cetificates{
+    background-color: var(--bg-color);
+    margin: 1.5rem;
+    color: var(--text-color);
+    border:var(--main-color) 0.2rem solid;
+}
+.cetificates:hover{
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+}
 .skills-content-column{
 display: flex;
 flex-direction: column;
@@ -139,33 +194,34 @@ align-items: center;
 margin: 1.5rem;
 }
 .warning {
-    font-size: small;
-    color: var(--main-color);
+    font-size: 0.7rem;
+    color: var(--second-bg-color);
+    margin-bottom: 1rem;
 }
-.section-name{
-font-size: 3rem;
-margin: 2rem;
-color: var(--text-color);
+#section-name{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 /* Brain sections */
 .main-brain{
     position: absolute;
     top: 0%;
-    left: 25%;
-    width: 50%;
+    left: 35%;
+    width: 30%;
     opacity: 0.8s;
     -webkit-filter: grayscale(80%); 
     filter: grayscale(90%);
     z-index: 0; 
 }
 .big-brain{
-position: relative;
+position: sticky;
 }
 .big-brain-component{
    position: absolute;
     top: 0%;
-    left: 25%;
-    width: 50%;
+    left: 35%;
+    width: 30%;
     opacity: 0.8s;
     -webkit-filter: grayscale(70%); 
     filter: grayscale(60%);
@@ -179,6 +235,7 @@ position: relative;
     filter: none;
     z-index: 1;
 }
+
 /* projects section */
 /* experience section */
 .education{
