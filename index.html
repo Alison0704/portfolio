@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alitronics</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS files/border.css">
 
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -28,7 +29,7 @@
     <section class="home" id ="home">
         
     </section>
-
+    <video autoplay loop muted plays inline class ="video-container" src="Assets/Background.mp4"></video>
     <!-- About section design -->
     <section class="about" id="about">
         <h2 class = "heading">About <span>me</span></h2>
@@ -56,7 +57,7 @@
                         <div class="skill-text">
                             <h3>Electrical Engineering</h3>
                             <p>Verilog, VLSI, Test, Design, MATLAB</p>
-                            <button class="resume" type="button" onclick="location.href='resumeELG.html'">Electrical Resume</button>
+                            <button class="resume" type="button" onclick="location.href='HTML files/resumeELG.html'">Electrical Resume</button>
                         </div>
                 </div>
                 <div id="Software">
@@ -64,7 +65,7 @@
                         <div class="skill-text">
                             <h3>Software Engineering</h3>
                             <p>Hackathons, Web Development, Game Engine, Language</p>
-                            <button class="resume"type="button" onclick="location.href='resumeELG.html'">Software Resume</button>
+                            <button class="resume"type="button" onclick="location.href='HTML files/resumeELG.html'">Software Resume</button>
                         </div>
                     </div>
                 </div>
@@ -72,18 +73,18 @@
                     <div class="skill-text">
                         <h3>Music</h3>
                         <p>Musescore, Soprano, FL Studio</p>
-                        <button class="resume" type="button" onclick="location.href='Music.html'">Musical Gallery</button>
+                        <button class="resume" type="button" onclick="location.href='HTML files/Music.html'">Musical Gallery</button>
                     </div>
                 </div>
                 <div id="Art">
                     <div class="skill-text">
                     <h3>Art</h3>
                     <p>CSP, Character Design</p>
-                    <button class="resume" type="button" onclick="location.href='art.html'">Art Gallery</button>
+                    <button class="resume" type="button" onclick="location.href='HTML files/art.html'">Art Gallery</button>
                     </div>
                 </div>
             </div>
-            <button class="resume" type="button" onclick="location.href='certificates.html'">Certificates</button>
+            <button class="resume" type="button" onclick="location.href='HTML files/certificates.html'">Certificates</button>
             <button onclick="updateCount()" class="btn">Click me to see each section of my Brain</button>
             <div class="skills-content-column">
                 <h4 id="section-name">Hello</h4>
@@ -110,8 +111,8 @@
                 <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-csp.png">
                 <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-characterDesign.png">
                 <!-- Others -->
-                <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-cerebellum.png">
-                <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-spinal cord.png">
+                <img name="brain_component" id = "other-part"class="big-brain-component" src="Assets/Brain/brain-cerebellum.png">
+                <img name="brain_component" id = "other-part" class="big-brain-component" src="Assets/Brain/brain-spinal cord.png">
             </div>
     </section>
 
@@ -199,10 +200,12 @@
                 <button type = "submit" class ="btn">Send!</button>
             </div>
         </form>
-    </section> 
-    <script src="interface.js"></script>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer"></footer>
+    <script src="Javascript files/interface.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js"></script>
+    <script src="Javascript files/script.js"></script>
 </body>
 </html>
