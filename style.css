@@ -131,6 +131,7 @@ flex-direction: column;
 
 .self-img img{
 display: block;
+position: relative;
 }
 .self-img img:hover{
 opacity: 0;
@@ -138,7 +139,6 @@ transition: all 0.5s ease;
 }
 .self-img:hover{
 background-image: url(Assets/me.png);
-
 }
 .about-btn{
 display: flex;
