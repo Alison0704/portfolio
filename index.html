@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <div id="background">
+    </div>
     <!-- Header/Navbar section design -->
     <header class="header">
         <a href="#" class="logo">Alitronics</a>
@@ -29,13 +31,13 @@
 
     <!-- Home section design -->
     <section class="home" id="home">
-        <img src="Assets/Home/home.jpg" alt="">
+        <img src="Assets/Home/Home.png" alt="">
         <h2>Hello World!</h2>
         <h3>Welcome to my <span>Portfolio Website</span></h3>
 
 
     </section>
-    <video autoplay loop muted plays inline class="video-container" src="Assets/Animation/Red Particles.mp4"></video>
+
     <!-- About section design -->
     <section class="about" id="about">
         <h2 class="heading">About <span>me</span></h2>
@@ -46,10 +48,12 @@
                     <!-- TODO make this text typing -->
                     <h3>Hi, I'm <span>Alison Emilien</span></h3>
                     <p>I am a passionate engineering student at the University of Ottawa with a strong foundation in
-                        MATLAB, Multisim, and programming languages like Perl, Python, and Verilog. I actively pursue
+                        MATLAB, Multisim, and programming languages like Perl, Python, and Verilog. I actively
+                        pursue
                         practical experiences, from developing Android apps and Arduino projects to engaging in game
                         prototyping. My diverse skill set, attention to detail, and fluency in multiple languages
-                        position me as a dedicated and versatile contributor in the fields of electrical engineering and
+                        position me as a dedicated and versatile contributor in the fields of electrical engineering
+                        and
                         computing technology.</p>
                 </div>
                 <a href="#contact"><button class="about-btn">Let's connect!</button></a>
@@ -63,89 +67,108 @@
     <!-- Skills section design -->
     <section class="skills" id="skills">
         <h2 class="heading"><span>Skills</span> and <span>Knowledge</span>
-            <h2>
-                <div class="skills-details">
-                    <div id="Electrical">
+            <div class="skills-details">
+                <div id="Electrical">
+                    <div id="alister-pic">
+                    </div>
+                    <div class="skill-text">
+                        <h3>Electrical Engineering</h3>
+                        <p>Verilog, VLSI, Test, Design, MATLAB</p>
+                        <button class="resume" type="button"
+                            onclick="location.href='HTML files/resumeELG.html'">Electrical Resume</button>
+                    </div>
+                </div>
+                <div id="Software">
+                    <div id="chloe-pic"></div>
+                    <div class="skill-content">
                         <div class="skill-text">
-                            <h3>Electrical Engineering</h3>
-                            <p>Verilog, VLSI, Test, Design, MATLAB</p>
+                            <h3>Software Engineering</h3>
+                            <p>Hackathons, Web Development, Game Engine, Language</p>
                             <button class="resume" type="button"
-                                onclick="location.href='HTML files/resumeELG.html'">Electrical Resume</button>
-                        </div>
-                    </div>
-                    <div id="Software">
-                        <div class="skill-content">
-                            <div class="skill-text">
-                                <h3>Software Engineering</h3>
-                                <p>Hackathons, Web Development, Game Engine, Language</p>
-                                <button class="resume" type="button"
-                                    onclick="location.href='HTML files/resumeELG.html'">Software Resume</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="Music">
-                        <!-- TODO: Add a section for soprano experiences and choir events -->
-                        <!-- TODO: section of FLstudio and musescore "But I'm not ready to showcase these" -->
-                        <div class="skill-text">
-                            <h3>Music</h3>
-                            <p>Musescore, Soprano, FL Studio</p>
-                            <button class="resume" type="button" onclick="location.href='HTML files/Music.html'">Musical
-                                Gallery</button>
-                        </div>
-                    </div>
-                    <div id="Art">
-                        <!-- TODO: change title to Arts & Crafts and Extra-curricular activities -->
-                        <!-- TODO: Add athletic section and origami and CEED designs section -->
-                        <div class="skill-text">
-                            <h3>Art</h3>
-                            <p>CSP, Character Design</p>
-                            <button class="resume" type="button" onclick="location.href='HTML files/art.html'">Art
-                                Gallery</button>
+                                onclick="location.href='HTML files/resumeELG.html'">Software Resume</button>
                         </div>
                     </div>
                 </div>
-                <button class="resume" type="button"
-                    onclick="location.href='HTML files/certificates.html'">Certificates</button>
-                <button onclick="updateCount()" class="btn">Click me to see each section of my Brain</button>
-                <div class="skills-content-column">
-                    <h4 id="section-name">Hello</h4>
-                    <p class="warning">Note: This is not a factual representation of the brain</p>
+                <div id="Music">
+                    <div id="emilian-pic"></div>
+                    <!-- TODO: Add a section for soprano experiences and choir events -->
+                    <!-- TODO: section of FLstudio and musescore "But I'm not ready to showcase these" -->
+                    <div class="skill-text">
+                        <h3>Music</h3>
+                        <p>Musescore, Soprano, FL Studio</p>
+                        <button class="resume" type="button" onclick="location.href='HTML files/Music.html'">Musical
+                            Gallery</button>
+                    </div>
                 </div>
-                <div class="big-brain">
-                    <img class="main-brain" src="Assets/Brain/brain-whole.png">
-                    <!-- ELG section -->
-                    <img name="brain_component" class="big-brain-component" title="Verilog"
-                        src="Assets/Brain/brain-verilog.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-Test.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-VLSI.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-Design.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-MATLAB.png">
-                    <!-- SEG section -->
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-hack.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-web.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-engine.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-language.png">
-                    <!-- Music section -->
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-musescore.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-soprano.png">
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-FLstudio.png">
-                    <!-- Art section -->
-                    <img name="brain_component" class="big-brain-component" src="Assets/Brain/brain-csp.png">
-                    <img name="brain_component" class="big-brain-component"
-                        src="Assets/Brain/brain-characterDesign.png">
-                    <!-- Others -->
-                    <img name="brain_component" id="other-part" class="big-brain-component"
-                        src="Assets/Brain/brain-cerebellum.png">
-                    <img name="brain_component" id="other-part" class="big-brain-component"
-                        src="Assets/Brain/brain-spinal cord.png">
+                <div id="Art">
+                    <div id="eleanor-pic"></div>
+                    <!-- TODO: change title to Arts & Crafts and Extra-curricular activities -->
+                    <!-- TODO: Add athletic section and origami and CEED designs section -->
+                    <div class="skill-text">
+                        <h3>Art</h3>
+                        <p>CSP, Character Design</p>
+                        <button class="resume" type="button" onclick="location.href='HTML files/art.html'">Art
+                            Gallery</button>
+                    </div>
                 </div>
+            </div>
+            <button class="resume" type="button"
+                onclick="location.href='HTML files/certificates.html'">Certificates</button>
+
     </section>
 
     <!-- Projects section design -->
     <section class="projects" id="projects">
         <h2 class="heading"><span>Projects</span>
-            <h2>
+            <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore
+                et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
+                aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
+                tristique nulla aliquet enim tortor. Praesent elementum facilisis leo vel fringilla est ullamcorper
+                eget. Euismod quis viverra nibh cras pulvinar mattis nunc. Ut aliquam purus sit amet luctus
+                venenatis. Nunc sed id semper risus in. Nulla aliquet enim tortor at auctor urna. Tellus in hac
+                habitasse platea. Natoque penatibus et magnis dis. Pharetra diam sit amet nisl suscipit adipiscing
+                bibendum. In hac habitasse platea dictumst vestibulum. Lobortis mattis aliquam faucibus purus in
+                massa tempor nec. Convallis posuere morbi leo urna molestie at. Dui vivamus arcu felis bibendum ut
+                tristique et egestas. Tortor posuere ac ut consequat semper. Odio aenean sed adipiscing diam donec
+                adipiscing tristique risus nec. Nam aliquam sem et tortor.
 
+            </p>
+            <div class="project-list">
+                <div class="project-component">
+                    <div id="icon"></div>
+                    <h3 class="title">Hello world</h3>
+                    <p id="project-description">
+                        hello
+                    </p>
+                    <button>See More</button>
+                </div>
+                <div class="project-component">
+                    <div id="icon"></div>
+                    <h3 class="title">Hello world</h3>
+                    <p id="project-description">
+                        hello
+                    </p>
+                    <button>See More</button>
+                </div>
+                <div class="project-component">
+                    <div id="icon"></div>
+                    <h3 class="title">Hello world</h3>
+                    <p id="project-description">
+                        hello
+                    </p>
+                    <button>See More</button>
+                </div>
+                <div class="project-component">
+                    <div id="icon"></div>
+                    <h3 class="title">Hello world</h3>
+                    <p id="project-description">
+                        hello
+                    </p>
+                    <button>See More</button>
+                </div>
+
+            </div>
     </section>
 
     <!-- Experience section design -->
@@ -162,8 +185,10 @@
                             <div class="year"><i class='bx bxs-calendar'></i> 2020 - 2026</div>
                             <h3>University of Ottawa - BASc Electrical Engineering and BSc Computing Technology -
                                 Ottawa, ON</h3>
-                            <p>Currently pursuing a double degree in Electrical Engineering and Computing Technology at
-                                the University of Ottawa. I am passionate about technology and I am always looking for
+                            <p>Currently pursuing a double degree in Electrical Engineering and Computing Technology
+                                at
+                                the University of Ottawa. I am passionate about technology and I am always looking
+                                for
                                 new opportunities to learn and grow.</p>
                         </div>
                     </div>
@@ -191,7 +216,8 @@
                             </div>
                             <h3>Teaching Assistant – ITI 1500 – University of Ottawa - Ottawa, ON</h3>
                             <p>Assisted students in understanding the course material, and helped them with their
-                                assignments and projects. I also held office hours to help students with their questions
+                                assignments and projects. I also held office hours to help students with their
+                                questions
                                 and concerns.</p>
                         </div>
                     </div>
@@ -200,9 +226,11 @@
                             <div class="year">
                                 <i class='bx bxs-calendar'></i> 2023 - 2024
                             </div>
-                            <h3>Project Clerk, Pension and Benefits Assistant – University of Ottawa - Ottawa, ON</h3>
+                            <h3>Project Clerk, Pension and Benefits Assistant – University of Ottawa - Ottawa, ON
+                            </h3>
                             <p>Assisted the Pension and Benefits team with their daily tasks. I was responsible for
-                                updating the pension and benefits database, and I also helped with the preparation of
+                                updating the pension and benefits database, and I also helped with the preparation
+                                of
                                 the pension and benefits reports.</p>
                         </div>
                     </div>

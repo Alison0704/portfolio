@@ -38,6 +38,16 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+
+}
+
+#background {
+    background: url(Assets/wallpaper.png);
+    z-index: -2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 20%;
 }
 
 h2 {
@@ -140,6 +150,9 @@ section {
     }
 }
 
+#home {
+    margin-bottom: 200px;
+}
 
 /* Background video edit */
 .video-container {
@@ -202,9 +215,6 @@ section {
 }
 
 /* skills section */
-.skills {
-    margin-bottom: 20rem;
-}
 
 .skills-details {
     display: flex;
@@ -237,6 +247,17 @@ section {
 #Art:hover {
     background: var(--darker-main-color);
     transition: all 0.3s ease;
+}
+
+/* characters */
+#alister-pic,
+#chloe-pic,
+#emilian-pic,
+#eleanor-pic {
+    padding: 50px;
+    width: 50px;
+    height: 50ox;
+    background: #62573d;
 }
 
 .resume {
@@ -274,13 +295,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5rem;
-}
-
-.warning {
-    font-size: 0.7rem;
-    color: var(--second-bg-color);
-    margin-bottom: 1rem;
 }
 
 #section-name {
@@ -289,7 +303,7 @@ section {
     text-align: center;
 }
 
-/* Brain sections */
+/* Brain sections
 .main-brain {
     position: absolute;
     top: 0%;
@@ -323,12 +337,47 @@ section {
     -webkit-filter: none;
     filter: none;
     z-index: 1;
-}
+} */
 
 /* projects section */
+#projects p {
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.project-list {
+    max-height: 1000px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.project-list .project-component {
+    margin: 4rem;
+    border: 3px solid #c0a663;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5%;
+    align-items: center;
+    min-width: 400px;
+    height: 650px;
+    text-align: center;
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+    background-color: #CACACA;
+}
+
+.project-component p {
+    padding: 3rem;
+    align-items: center;
+}
+
 /* experience section */
 .education {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     flex-direction: column;
