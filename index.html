@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alitronics</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="CSS files/border.css">
 
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -31,9 +30,17 @@
 
     <!-- Home section design -->
     <section class="home" id="home">
-        <img src="Assets/Home/Home.png" alt="">
-        <h2>Hello World!</h2>
-        <h3>Welcome to my <span>Portfolio Website</span></h3>
+        <img>
+        <h1>Hello World!</h1>
+        <h2>
+            <span class="static"> I am an aspiring</span>
+            <span class="text_1">Web</span><span class="text_2">Circuit</span><span class="text_3">Character</span>
+            <span class="static">Designer</span>
+
+        </h2>
+        <h3>Welcome to my <span>Portfolio Website</span>!</h3>
+        <h4>I am looking for a internship</h4>
+        <h4> Part-time in Fall2024 or Winter2025 or Full-time in Summer2025</h4>
 
 
     </section>
@@ -46,7 +53,7 @@
             <div class="about-content-column">
                 <div class="about-text">
                     <!-- TODO make this text typing -->
-                    <h3>Hi, I'm <span>Alison Emilien</span></h3>
+                    <h3>Hi, I'm <span>Marie Annaelle Alison Emilien</span></h3>
                     <p>I am a passionate engineering student at the University of Ottawa with a strong foundation in
                         MATLAB, Multisim, and programming languages like Perl, Python, and Verilog. I actively
                         pursue
@@ -56,7 +63,11 @@
                         and
                         computing technology.</p>
                 </div>
-                <a href="#contact"><button class="about-btn">Let's connect!</button></a>
+                <div class="btn-content">
+                    <a href="#contact"><button class="about-btn">Let's connect!</button></a>
+                    <a href="#contact"><button class="about-btn"> My Origins </button></a>
+                </div>
+
             </div>
             <div class="self-img">
                 <img src="Assets/cat.png" />
@@ -67,6 +78,20 @@
     <!-- Skills section design -->
     <section class="skills" id="skills">
         <h2 class="heading"><span>Skills</span> and <span>Knowledge</span>
+            <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore
+                et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
+                aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
+                tristique nulla aliquet enim tortor. Praesent elementum facilisis leo vel fringilla est ullamcorper
+                eget. Euismod quis viverra nibh cras pulvinar mattis nunc. Ut aliquam purus sit amet luctus
+                venenatis. Nunc sed id semper risus in. Nulla aliquet enim tortor at auctor urna. Tellus in hac
+                habitasse platea. Natoque penatibus et magnis dis. Pharetra diam sit amet nisl suscipit adipiscing
+                bibendum. In hac habitasse platea dictumst vestibulum. Lobortis mattis aliquam faucibus purus in
+                massa tempor nec. Convallis posuere morbi leo urna molestie at. Dui vivamus arcu felis bibendum ut
+                tristique et egestas. Tortor posuere ac ut consequat semper. Odio aenean sed adipiscing diam donec
+                adipiscing tristique risus nec. Nam aliquam sem et tortor.
+
+            </p>
             <div class="skills-details">
                 <div id="Electrical">
                     <div id="alister-pic">
@@ -75,7 +100,7 @@
                         <h3>Electrical Engineering</h3>
                         <p>Verilog, VLSI, Test, Design, MATLAB</p>
                         <button class="resume" type="button"
-                            onclick="location.href='HTML files/resumeELG.html'">Electrical Resume</button>
+                            onclick="location.href='Qualifications/resumeELG.html'">Electrical Resume</button>
                     </div>
                 </div>
                 <div id="Software">
@@ -85,7 +110,7 @@
                             <h3>Software Engineering</h3>
                             <p>Hackathons, Web Development, Game Engine, Language</p>
                             <button class="resume" type="button"
-                                onclick="location.href='HTML files/resumeELG.html'">Software Resume</button>
+                                onclick="location.href='Qualifications/resumeELG.html'">Software Resume</button>
                         </div>
                     </div>
                 </div>
@@ -114,6 +139,8 @@
             </div>
             <button class="resume" type="button"
                 onclick="location.href='HTML files/certificates.html'">Certificates</button>
+            <button class="resume" type="button" onclick="location.href='HTML files/certificates.html'">See what is in
+                my brain</button>
 
     </section>
 
@@ -137,35 +164,52 @@
             <div class="project-list">
                 <div class="project-component">
                     <div id="icon"></div>
-                    <h3 class="title">Hello world</h3>
+                    <h3 class="title">Quartus II -> VLSI design</h3>
                     <p id="project-description">
-                        hello
+                        Since being a TA for the Digital system class(ITI1500), I've helped to guide students in
+                        learning the basics of logic gates, adders, multiplexer,etc. But since I am also taking the
+                        course in principle and application to VLSI, why don't I replicate those first year lab
+                        instructions into CMOS designs in Cadance Virtuoso.
                     </p>
                     <button>See More</button>
                 </div>
                 <div class="project-component">
                     <div id="icon"></div>
-                    <h3 class="title">Hello world</h3>
+                    <h3 class="title">Microwave Amplifier Design</h3>
                     <p id="project-description">
-                        hello
+                        This has been our journey in how we managed to build our own microwave amplifier design from pen
+                        and paper to the design in AWR Cadance to building it all physically.
                     </p>
                     <button>See More</button>
                 </div>
                 <div class="project-component">
                     <div id="icon"></div>
-                    <h3 class="title">Hello world</h3>
+                    <h3 class="title">Arduino</h3>
                     <p id="project-description">
-                        hello
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolor dolorem optio omnis
+                        laboriosam, veniam, earum quo delectus, assumenda at nisi expedita beatae accusamus consequuntur
+                        quibusdam aliquid unde odit voluptatum.
                     </p>
                     <button>See More</button>
                 </div>
                 <div class="project-component">
                     <div id="icon"></div>
-                    <h3 class="title">Hello world</h3>
+                    <h3 class="title">Meet my personas</h3>
                     <p id="project-description">
-                        hello
+                        As you can see, my interest is not every much one sided. To be able to grasp all of it, I had
+                        select a specific type of mindset for all of them while also making it fun. So I created 4
+                        personas with their own backstory
                     </p>
                     <button>See More</button>
+                </div>
+                <div class="project-component">
+                    <div id="icon"></div>
+                    <h3 class="title">Role-based service updates</h3>
+                    <p id="project-description">
+                        Applying good design pattern to a company that changes services based on the role who logged in,
+                        which in this case is Admin, Employee and Client.
+                    </p>
+                    <button class="disabled-button">Updating...</button>
                 </div>
 
             </div>
@@ -265,10 +309,11 @@
     </section>
     <!-- Footer section -->
     <footer class="footer"></footer>
+
     <script src="Javascript files/interface.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="Javascript files/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
