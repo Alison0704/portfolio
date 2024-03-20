@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #343434;
+    --second-bg-color: #CACACA;
+    --text-color: #FCFAF1;
+    --main-color: #c0a663;
+    --darker-main-color: #62573d;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 70px;
+    padding-top: 100px;
+}
+
+p {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kalam, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+#Background {
+    position: fixed;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    opacity: 50%;
+}
+
+
+.selection {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.row-img {
+    display: flex;
+    align-self: center;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.row-img img {
+    position: relative;
+    padding: 2rem;
+    opacity: 60%;
+}
+
+.row-img img:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 20px;
+    padding: 5rem 3rem;
+}
