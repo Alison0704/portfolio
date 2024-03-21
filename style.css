@@ -140,7 +140,12 @@ section {
 
 .home h4 {
     font-size: 25px;
-    color: var(--second-bg-color);
+    color: var(--text-color);
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
 }
 
 .static {
