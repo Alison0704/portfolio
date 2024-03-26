@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kalam, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: large;
+}
+
+:root {
+    --bg-color: #343434;
+    --second-bg-color: #CACACA;
+    --text-color: #FCFAF1;
+    --main-color: #c0a663;
+    --darker-main-color: #62573d;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: large;
+}

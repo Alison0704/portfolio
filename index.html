@@ -6,54 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alitronics</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div id="background">
-    </div>
+    <div id="background"></div>
     <!-- Header/Navbar section design -->
     <header class="header">
-        <a href="#" class="logo">Alitronics</a>
-        <div class="bx bx-menu" id="menu-btn"></div>
-        <nav class="navbar">
+        <div id="Logo">Alitronics</div>
+        <div class="topnav" id="myTopnav">
             <a href="#home">Home</a>
-            <a href="#about">About me</a>
+            <a href="#about ">About me</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#education">Experiences</a>
-            <a href="#contact">Contact me</a>
-        </nav>
+            <a href="#experiences">Experiences</a>
+            <a href="#contact">Contact Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <!-- Home section design -->
     <section class="home" id="home">
-        <img>
-        <h1>Hello World!</h1>
-        <h2>
-            <span class="static"> I am an aspiring</span>
-            <span class="text_1">Web</span><span class="text_2">Circuit</span><span class="text_3">Character</span>
-            <span class="static">Designer</span>
-
-        </h2>
-        <h3>Welcome to my <span>Portfolio Website</span>!</h3>
-        <h4>I am looking for an <u>internship</u>:</h4>
-        <h4> Part-time in Fall2024 or Winter2025</h4>
-        <h4>Full-time in Summer2025</h4>
-
-
+        <div id="home-content">
+            <p id="home-position"> <span class="static"> I am an aspiring</span></p>
+            <p id="home-position">
+                <span class="text_1">Web</span><span class="text_2">Circuit</span><span class="text_3">Character</span>
+            </p>
+            <p id="home-position"> <span class="static">Designer</span></p>
+            <p id="home-welcome">Welcome to my <span>Portfolio Website</span>!</p>
+            <p id="home-aim">I am looking for an <u>internship</u>:</p>
+            <p id="home-aim">Part-time in Fall2024 or Winter2025</p>
+            <p id="home-aim">Full-time in Summer2025</p>
+        </div>
     </section>
 
     <!-- About section design -->
     <section class="about" id="about">
         <h2 class="heading">About <span>me</span></h2>
-
         <div class="about-content">
+            <img id="myImg" src="Assets/me.png" alt="">
             <div class="about-content-column">
                 <div class="about-text">
-                    <!-- TODO make this text typing -->
+
                     <h3>Hi, I'm <span>Marie Annaelle Alison Emilien</span></h3>
                     <p>I am a passionate engineering student at the University of Ottawa with a strong foundation in
                         MATLAB, Multisim, and programming languages like Perl, Python, and Verilog. I actively
@@ -66,183 +65,192 @@
                 </div>
                 <div class="btn-content">
                     <a href="#contact"><button class="about-btn">Let's connect!</button></a>
-                    <a href="#contact"><button class="about-btn"> My Origins </button></a>
+                    <a href="Mauritius/indexMauritius.html"><button class="about-btn"> My Origins </button></a>
                 </div>
 
             </div>
-            <div class="self-img">
+            <!-- <div class="self-img">
                 <img src="Assets/cat.png" />
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- Skills section design -->
     <section class="skills" id="skills">
         <h2 class="heading"><span>Skills</span> and <span>Knowledge</span>
-            <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore
-                et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
-                aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
-                tristique nulla aliquet enim tortor. Praesent elementum facilisis leo vel fringilla est ullamcorper
-                eget. Euismod quis viverra nibh cras pulvinar mattis nunc. Ut aliquam purus sit amet luctus
-                venenatis. Nunc sed id semper risus in. Nulla aliquet enim tortor at auctor urna. Tellus in hac
-                habitasse platea. Natoque penatibus et magnis dis. Pharetra diam sit amet nisl suscipit adipiscing
-                bibendum. In hac habitasse platea dictumst vestibulum. Lobortis mattis aliquam faucibus purus in
-                massa tempor nec. Convallis posuere morbi leo urna molestie at. Dui vivamus arcu felis bibendum ut
-                tristique et egestas. Tortor posuere ac ut consequat semper. Odio aenean sed adipiscing diam donec
-                adipiscing tristique risus nec. Nam aliquam sem et tortor.
+            <div class="skill-content">
+                <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
+                    aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
+                    tristique nulla aliquet enim tortor. Praesent elementum facilisis leo vel fringilla est ullamcorper
+                    eget. Euismod quis viverra nibh cras pulvinar mattis nunc. Ut aliquam purus sit amet luctus
+                    venenatis. Nunc sed id semper risus in. Nulla aliquet enim tortor at auctor urna. Tellus in hac
+                    habitasse platea. Natoque penatibus et magnis dis. Pharetra diam sit amet nisl suscipit adipiscing
+                    bibendum. In hac habitasse platea dictumst vestibulum. Lobortis mattis aliquam faucibus purus in
+                    massa tempor nec. Convallis posuere morbi leo urna molestie at. Dui vivamus arcu felis bibendum ut
+                    tristique et egestas. Tortor posuere ac ut consequat semper. Odio aenean sed adipiscing diam donec
+                    adipiscing tristique risus nec. Nam aliquam sem et tortor.
 
-            </p>
-            <div class="skills-details">
-                <div id="Electrical">
-                    <div id="alister-pic">
-                    </div>
-                    <div class="skill-text">
-                        <h3>Electrical Engineering</h3>
-                        <p>Verilog, VLSI, Test, Design, MATLAB</p>
-                        <button class="resume" type="button"
-                            onclick="location.href='Qualifications/resumeELG.html'">Electrical Resume</button>
-                    </div>
-                </div>
-                <div id="Software">
-                    <div id="chloe-pic"></div>
-                    <div class="skill-content">
+                </p>
+                <div class="skills-details">
+                    <div id="Electrical">
+                        <div id="alister-pic">
+                        </div>
                         <div class="skill-text">
-                            <h3>Software Engineering</h3>
-                            <p>Hackathons, Web Development, Game Engine, Language</p>
+                            <h3>Electrical Engineering</h3>
+                            <p>Verilog, VLSI, Test, Design, MATLAB</p>
                             <button class="resume" type="button"
-                                onclick="location.href='Qualifications/resumeELG.html'">Software Resume</button>
+                                onclick="location.href='Qualifications/resumeELG.html'">Electrical Resume</button>
+                        </div>
+                    </div>
+                    <div id="Software">
+                        <div id="chloe-pic"></div>
+                        <div class="skill-content">
+                            <div class="skill-text">
+                                <h3>Software Engineering</h3>
+                                <p>Hackathons, Web Development, Game Engine, Language</p>
+                                <button class="resume" type="button"
+                                    onclick="location.href='Qualifications/resumeELG.html'">Software Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Music">
+                        <div id="emilian-pic"></div>
+                        <!-- TODO: Add a section for soprano experiences and choir events -->
+                        <!-- TODO: section of FLstudio and musescore "But I'm not ready to showcase these" -->
+                        <div class="skill-text">
+                            <h3>Music</h3>
+                            <p>Musescore, Soprano, FL Studio</p>
+                            <button class="resume" type="button" onclick="location.href='Music/music.html'">Musical
+                                Gallery</button>
+                        </div>
+                    </div>
+                    <div id="Art">
+                        <div id="eleanor-pic"></div>
+                        <!-- TODO: change title to Arts & Crafts and Extra-curricular activities -->
+                        <!-- TODO: Add athletic section and origami and CEED designs section -->
+                        <div class="skill-text">
+                            <h3>Art</h3>
+                            <p>CSP, Character Design</p>
+                            <button class="resume" type="button" onclick="location.href='Art/gallery.html'">Art
+                                Gallery</button>
                         </div>
                     </div>
                 </div>
-                <div id="Music">
-                    <div id="emilian-pic"></div>
-                    <!-- TODO: Add a section for soprano experiences and choir events -->
-                    <!-- TODO: section of FLstudio and musescore "But I'm not ready to showcase these" -->
-                    <div class="skill-text">
-                        <h3>Music</h3>
-                        <p>Musescore, Soprano, FL Studio</p>
-                        <button class="resume" type="button" onclick="location.href='HTML files/Music.html'">Musical
-                            Gallery</button>
-                    </div>
-                </div>
-                <div id="Art">
-                    <div id="eleanor-pic"></div>
-                    <!-- TODO: change title to Arts & Crafts and Extra-curricular activities -->
-                    <!-- TODO: Add athletic section and origami and CEED designs section -->
-                    <div class="skill-text">
-                        <h3>Art</h3>
-                        <p>CSP, Character Design</p>
-                        <button class="resume" type="button" onclick="location.href='HTML files/art.html'">Art
-                            Gallery</button>
-                    </div>
-                </div>
+                <button class="resume" type="button"
+                    onclick="location.href='Qualifications/certificates.html'">Certificates</button>
+                <button class="resume" type="button" onclick="location.href='Brain/brain.html'">See what
+                    is in my brain</button>
             </div>
-            <button class="resume" type="button"
-                onclick="location.href='HTML files/certificates.html'">Certificates</button>
-            <button class="resume" type="button" onclick="location.href='HTML files/certificates.html'">See what is in
-                my brain</button>
-
     </section>
 
     <!-- Projects section design -->
     <section class="projects" id="projects">
-        <h2 class="heading"><span>Projects</span>
-            <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore
-                et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
-                aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
-                tristique nulla aliquet enim tortor. Praesent elementum facilisis leo vel fringilla est ullamcorper
-                eget. Euismod quis viverra nibh cras pulvinar mattis nunc. Ut aliquam purus sit amet luctus
-                venenatis. Nunc sed id semper risus in. Nulla aliquet enim tortor at auctor urna. Tellus in hac
-                habitasse platea. Natoque penatibus et magnis dis. Pharetra diam sit amet nisl suscipit adipiscing
-                bibendum. In hac habitasse platea dictumst vestibulum. Lobortis mattis aliquam faucibus purus in
-                massa tempor nec. Convallis posuere morbi leo urna molestie at. Dui vivamus arcu felis bibendum ut
-                tristique et egestas. Tortor posuere ac ut consequat semper. Odio aenean sed adipiscing diam donec
-                adipiscing tristique risus nec. Nam aliquam sem et tortor.
+        <div class="project-content">
+            <h2 class="heading"><span>Projects</span>
+                <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
+                    aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
+                    tristique nulla aliquet enim tortor. Praesent elementum facilisis leo vel fringilla est ullamcorper
+                    eget. Euismod quis viverra nibh cras pulvinar mattis nunc. Ut aliquam purus sit amet luctus
+                    venenatis. Nunc sed id semper risus in. Nulla aliquet enim tortor at auctor urna. Tellus in hac
+                    habitasse platea. Natoque penatibus et magnis dis. Pharetra diam sit amet nisl suscipit adipiscing
+                    bibendum. In hac habitasse platea dictumst vestibulum. Lobortis mattis aliquam faucibus purus in
+                    massa tempor nec. Convallis posuere morbi leo urna molestie at. Dui vivamus arcu felis bibendum ut
+                    tristique et egestas. Tortor posuere ac ut consequat semper. Odio aenean sed adipiscing diam donec
+                    adipiscing tristique risus nec. Nam aliquam sem et tortor.
 
-            </p>
-            <div class="project-list">
-                <div class="project-component">
-                    <div id="icon"></div>
-                    <h3 class="title">Quartus II to VLSI design</h3>
-                    <p id="project-description">
-                        Since being a TA for the Digital system class(ITI1500), I've helped to guide students in
-                        learning the basics of logic gates, adders, multiplexer,etc. But since I am also taking the
-                        course in principle and application to VLSI, why don't I replicate those first year lab
-                        instructions into CMOS designs in Cadance Virtuoso.
-                    </p>
-                    <button class="disabled-button">Updating...</button>
-                </div>
-                <div class="project-component">
-                    <div id="icon"></div>
-                    <h3 class="title">Microwave Amplifier Design</h3>
-                    <p id="project-description">
-                        This has been our journey in how we managed to build our own microwave amplifier design from pen
-                        and paper to the design in AWR Cadance to building it all physically.
-                    </p>
-                    <button class="disabled-button">Updating...</button>
-                </div>
-                <div class="project-component">
-                    <div id="icon"></div>
-                    <h3 class="title">Arduino</h3>
-                    <p id="project-description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolor dolorem optio omnis
-                        laboriosam, veniam, earum quo delectus, assumenda at nisi expedita beatae accusamus consequuntur
-                        quibusdam aliquid unde odit voluptatum.
-                    </p>
-                    <button class="disabled-button">Updating...</button>
-                </div>
-                <div class="project-component">
-                    <div id="icon"></div>
-                    <h3 class="title">Web Development Capstones</h3>
-                    <p id="project-description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolor dolorem optio omnis
-                        laboriosam, veniam, earum quo delectus, assumenda at nisi expedita beatae accusamus consequuntur
-                        quibusdam aliquid unde odit voluptatum.
-                    </p>
-                    <button class="disabled-button">Updating...</button>
-                </div>
-                <div class="project-component">
-                    <div id="icon"></div>
-                    <h3 class="title">UI Design Challenge</h3>
-                    <p id="project-description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolor dolorem optio omnis
-                        laboriosam, veniam, earum quo delectus, assumenda at nisi expedita beatae accusamus consequuntur
-                        quibusdam aliquid unde odit voluptatum.
-                    </p>
-                    <button class="disabled-button">Updating...</button>
-                </div>
-                <div class="project-component">
-                    <div id="icon"></div>
-                    <h3 class="title">Meet my personas</h3>
-                    <p id="project-description">
-                        As you can see, my interest is not every much one sided. To be able to grasp all of it, I had
-                        select a specific type of mindset for all of them while also making it fun. So I created 4
-                        personas with their own backstory
-                    </p>
-                    <button onclick="location.href='Projects/Characters/charChoice.html'">See More</button>
-                </div>
-                <div class="project-component">
-                    <div id="icon"></div>
-                    <h3 class="title">Role-based service updates</h3>
-                    <p id="project-description">
-                        Applying good design pattern to a company that changes services based on the role who logged in,
-                        which in this case is Admin, Employee and Client.
-                    </p>
-                    <button class="disabled-button">Updating...</button>
-                </div>
+                </p>
+                <div class="project-list">
+                    <div class="project-component">
+                        <div id="icon"></div>
+                        <h3 class="title">Quartus II to VLSI design</h3>
+                        <p id="project-description">
+                            Since being a TA for the Digital system class(ITI1500), I've helped to guide students in
+                            learning the basics of logic gates, adders, multiplexer,etc. But since I am also taking the
+                            course in principle and application to VLSI, why don't I replicate those first year lab
+                            instructions into CMOS designs in Cadance Virtuoso.
+                        </p>
+                        <button class="disabled-button">Updating...</button>
+                    </div>
+                    <div class="project-component">
+                        <div id="icon"></div>
+                        <h3 class="title">Microwave Amplifier Design</h3>
+                        <p id="project-description">
+                            This has been our journey in how we managed to build our own microwave amplifier design from
+                            pen
+                            and paper to the design in AWR Cadance to building it all physically.
+                        </p>
+                        <button class="disabled-button">Updating...</button>
+                    </div>
+                    <div class="project-component">
+                        <div id="icon"></div>
+                        <h3 class="title">Arduino</h3>
+                        <p id="project-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolor dolorem optio omnis
+                            laboriosam, veniam, earum quo delectus, assumenda at nisi expedita beatae accusamus
+                            consequuntur
+                            quibusdam aliquid unde odit voluptatum.
+                        </p>
+                        <button class="disabled-button">Updating...</button>
+                    </div>
+                    <div class="project-component">
+                        <div id="icon"></div>
+                        <h3 class="title">Web Development Capstones</h3>
+                        <p id="project-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolor dolorem optio omnis
+                            laboriosam, veniam, earum quo delectus, assumenda at nisi expedita beatae accusamus
+                            consequuntur
+                            quibusdam aliquid unde odit voluptatum.
+                        </p>
+                        <button class="disabled-button">Updating...</button>
+                    </div>
+                    <div class="project-component">
+                        <div id="icon"></div>
+                        <h3 class="title">UI Design Challenge</h3>
+                        <p id="project-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolor dolorem optio omnis
+                            laboriosam, veniam, earum quo delectus, assumenda at nisi expedita beatae accusamus
+                            consequuntur
+                            quibusdam aliquid unde odit voluptatum.
+                        </p>
+                        <button class="disabled-button">Updating...</button>
+                    </div>
+                    <div class="project-component">
+                        <div id="icon"></div>
+                        <h3 class="title">Meet my personas</h3>
+                        <p id="project-description">
+                            As you can see, my interest is not every much one sided. To be able to grasp all of it, I
+                            had
+                            select a specific type of mindset for all of them while also making it fun. So I created 4
+                            personas with their own backstory
+                        </p>
+                        <button onclick="location.href='Projects/Characters/charChoice.html'">See More</button>
+                    </div>
+                    <div class="project-component">
+                        <div id="icon"></div>
+                        <h3 class="title">Role-based service updates</h3>
+                        <p id="project-description">
+                            Applying good design pattern to a company that changes services based on the role who logged
+                            in,
+                            which in this case is Admin, Employee and Client.
+                        </p>
+                        <button class="disabled-button">Updating...</button>
+                    </div>
 
-            </div>
+                </div>
+        </div>
     </section>
 
     <!-- Experience section design -->
-    <section class="education" id="education">
+    <section class="experiences" id="experiences">
         <h2 class="heading">My <span>Experiences</span></h2>
 
         <div class="education-row">
             <div class="education-column">
-                <h3 class="title">Academic Experience</h3>
+                <h3 class="title">Education</h3>
 
                 <div class="education-box">
                     <div class="education-content">
@@ -335,6 +343,16 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
