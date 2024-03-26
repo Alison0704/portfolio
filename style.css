@@ -157,7 +157,7 @@ u {
 
 }
 
-.static {
+/* .static {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -255,7 +255,7 @@ u {
     50% {
         opacity: 1;
     }
-}
+} */
 
 
 .home img {
