@@ -74,11 +74,6 @@ h3 span {
     color: var(--main-color);
 }
 
-u {
-    text-decoration: underline;
-    color: var(--main-color);
-}
-
 /* Custom Classes starts here*/
 .header {
     position: fixed;
@@ -138,7 +133,6 @@ u {
 #home-welcome span {
     color: var(--main-color);
     font-weight: 700;
-    text-decoration: underline;
 }
 
 #home-position .static {
@@ -147,7 +141,7 @@ u {
 }
 
 #home-position {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--main-color);
 }
 
@@ -156,106 +150,6 @@ u {
     color: var(--darker-main-color);
 
 }
-
-/* .static {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    display: inline-block;
-    color: var(--text-color);
-}
-
-
-.text_1 {
-    animation: text1;
-}
-
-.text_2 {
-    animation: text2;
-}
-
-.text_3 {
-    animation: text3;
-}
-
-.text_1,
-.text_2,
-.text_3 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    position: relative;
-    animation-duration: 10s;
-    animation-timing-function: steps(10, end);
-    animation-iteration-count: infinite;
-}
-
-.text_1::after,
-.text_2::after,
-.text_3::after {
-    content: "|";
-    position: absolute;
-    right: 0;
-    animation: caret infinite;
-    animation-duration: 1s;
-    animation-timing-function: steps(1, end);
-}
-
-@keyframes text3 {
-
-    0%,
-    65%,
-    90%,
-    100% {
-        width: 0
-    }
-
-    75%,
-    80% {
-        width: 4em;
-    }
-}
-
-@keyframes text2 {
-
-    0%,
-    35%,
-    60%,
-    100% {
-        width: 0;
-    }
-
-    45%,
-    50% {
-        width: 2.8em;
-    }
-}
-
-@keyframes text1 {
-
-    0%,
-    25%,
-    100% {
-        width: 0;
-    }
-
-    5%,
-    15% {
-        width: 2em;
-    }
-}
-
-@keyframes caret {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-} */
 
 
 .home img {
@@ -277,7 +171,7 @@ u {
 /* about me section */
 .about-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
     padding-bottom: 5rem;
@@ -294,6 +188,7 @@ u {
 
 .about-content-column {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -569,6 +464,7 @@ footer {
 @media screen and (max-width: 600px) {
     section h2 {
         font-size: 3rem;
+        text-align: center;
     }
 
     /* Nav bar */
@@ -613,5 +509,15 @@ footer {
     #emilian-pic,
     #eleanor-pic {
         display: none;
+    }
+
+    .skill-text {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .skill-content {
+        text-align: center;
     }
 }
