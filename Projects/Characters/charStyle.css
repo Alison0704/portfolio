@@ -13,7 +13,6 @@ body {
 }
 
 
-
 h1 {
     color: var(--text-color);
     text-align: center;
@@ -25,6 +24,14 @@ p {
     color: var(--text-color);
     text-align: center;
     font-size: 25px;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: large;
 }
 
 * {
@@ -39,13 +46,7 @@ p {
     border: none;
     outline: none;
     scroll-behavior: smooth;
-}
-
-.selection {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    scrollbar-color: var(--main-color) var(--bg-color);
 }
 
 video {
@@ -62,7 +63,8 @@ video {
 
 .row-img {
     display: flex;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     border-top: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
@@ -72,7 +74,6 @@ video {
     position: relative;
     padding: 2rem;
     opacity: 60%;
-    align-self: center;
 }
 
 .row-img img:hover {
@@ -83,4 +84,34 @@ video {
 .description {
     font-size: 20px;
     padding: 5rem 3rem;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .row-img {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        border-top: 2px solid var(--main-color);
+
+    }
+
+    .description {
+        font-size: 15px;
+        padding: 1rem;
+    }
+
 }

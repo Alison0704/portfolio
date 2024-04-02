@@ -12,6 +12,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    scrollbar-color: var(--main-color) var(--bg-color);
 }
 
 button {
@@ -74,7 +75,16 @@ h3 span {
     color: var(--main-color);
 }
 
+p {
+    font-size: 1.5rem;
+
+}
+
 /* Custom Classes starts here*/
+#general-description {
+    font-size: 1.5rem;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -115,13 +125,19 @@ h3 span {
 }
 
 /* Home Section */
+#home-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+
+}
+
 #home-content {
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     gap: 0.5rem;
 }
 
@@ -151,6 +167,12 @@ h3 span {
 
 }
 
+#home-pic {
+    width: 60vw;
+    height: 100vh;
+    background: #62573d;
+
+}
 
 .home img {
     position: absolute;
@@ -188,7 +210,6 @@ h3 span {
 
 .about-content-column {
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -205,8 +226,12 @@ h3 span {
     padding-bottom: 5rem;
 }
 
+.skill-content h3 {
+    font-size: 2.5rem;
+}
+
 .skill-content p {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .skills-details {
@@ -306,7 +331,7 @@ h3 span {
 }
 
 .project-list {
-    max-height: 1000px;
+    max-height: 700px;
     display: flex;
     overflow-x: auto;
 }
@@ -326,7 +351,7 @@ h3 span {
     border-radius: 5%;
     align-items: center;
     min-width: 250px;
-    height: 550px;
+    height: 400px;
     text-align: center;
 }
 
