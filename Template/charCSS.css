@@ -56,7 +56,6 @@ body {
 h1 {
     font-size: 3rem;
     color: var(--text-color);
-    margin: 2rem;
 
 }
 
@@ -144,20 +143,23 @@ h1 {
 #main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(83, 83, 82);
-}
-
-#main-content h1 {
-    font-size: 3rem;
-    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 section {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     padding-left: 23vw;
+
+}
+
+.title {
+    display: flex;
+    align-self: start;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding-left: 23vw;
+    margin: 1rem;
 
 }
 
@@ -165,16 +167,16 @@ section {
     display: none;
 }
 
-.Info {
+/* Insights section */
+.Insights {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 2rem;
 }
 
-.Info .content {
+.Insights .content {
     width: 90%;
     height: 100%;
     background-color: var(--second-bg-color);
@@ -182,24 +184,23 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 2rem;
 }
 
 #CharacterArt {
-    min-width: 250px;
-    height: 35em;
+    width: 40em;
+    height: 35rem;
     background-color: #d6b45d;
     border-radius: 3rem;
-    margin: 2rem;
-    display: block;
+    margin-right: 2rem;
 }
 
 #CharacterInfo {
     width: 60em;
-    height: 35em;
+    height: 35rem;
     background-color: #d6b45d;
     border-radius: 3rem;
-    margin: 2rem;
 }
 
 #info-box {
@@ -212,6 +213,151 @@ section {
     background-color: var(--bg-color);
     border-radius: 3rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Backstory section */
+.Backstory {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Backstory .content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darker-main-color);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+/* MoodBoard section */
+.MoodBoard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.MoodBoard .content {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--second-bg-color);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+/* CharacterSheet section */
+.CharacterSheet {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.CharacterSheet .content {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--second-bg-color);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+/* Artwork Section */
+.Artworks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Artworks .content {
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--second-bg-color);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+.Art-list {
+    max-height: 700px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.disabled-button {
+    background-color: #62573d;
+    color: var(--second-bg-color)
+}
+
+.Art-list .Art-component {
+    margin: 4rem;
+    padding: 1rem;
+    border: 3px solid #c0a663;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5%;
+    align-items: center;
+    min-width: 300px;
+    height: 350px;
+    text-align: center;
+}
+
+/* Artwork Section */
+.OldDesigns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.OldDesigns .content {
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--second-bg-color);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+.OldDesigns-list {
+    max-height: 700px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.OldDesigns-list .OldDesigns-component {
+    margin: 4rem;
+    padding: 1rem;
+    border: 3px solid #c0a663;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5%;
+    align-items: center;
+    min-width: 300px;
+    height: 350px;
+    text-align: center;
 }
 
 #Voice,
@@ -234,13 +380,31 @@ section {
     color: var(--text-color);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     #side-bar {
         display: none;
     }
 
     #name {
-        padding-left: 3vw;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #main-content .title {
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    section {
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
 
     #profile-pic-box {
@@ -250,38 +414,41 @@ section {
         margin: 3rem;
     }
 
-    section {
+    .title {
         padding-left: 0;
-        width: 100%;
-    }
-
-    .Info .content {
-        width: 93vw;
-        height: 100%;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
 }
 
 @media screen and (max-width: 700px) {
-    section {
-        padding-left: 0;
-        width: 100%;
+    #side-bar {
+        display: none;
     }
 
-    .Info .content {
-        width: 90%;
-        height: 100%;
+    .Insights .content {
+        width: 80vw;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
 
     #CharacterArt {
-        width: 80vw;
+        width: 70vw;
+        height: 35rem;
+        background-color: var(--main-color);
+        border-radius: 3rem;
+        margin-right: 0rem;
     }
 
     #CharacterInfo {
-        width: 80vw;
+        width: 70vw;
+        height: 35rem;
+        background-color: var(--main-color);
+        border-radius: 3rem;
+        margin: 2rem;
     }
+
+    #CharacterInfo p {
+        font-size: 0.8rem;
+    }
+
 }
