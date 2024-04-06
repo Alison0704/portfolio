@@ -31,8 +31,8 @@ button {
     padding: 0.5rem 2rem;
     border-radius: 1rem;
     font-size: large;
+    color: var(--bg-color);
 }
-
 
 html,
 body {
@@ -42,17 +42,28 @@ body {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
     vertical-align: middle;
     display: inline-block;
     border: var(--main-color) 1px solid;
+}
+
+img:hover {
+    opacity: 0.4;
+    color: var(--bg-color);
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 4rem;
+}
+
+#insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    color: var(--main-color);
 }
 
 .gallery-info {
@@ -64,13 +75,16 @@ h1 {
 
 p {
     margin-bottom: 20px;
+    font-size: 1.4rem;
 }
 
 .buttons-list {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 50px;
     padding-bottom: 50px;
+    justify-self: center;
 
 }
 
@@ -78,39 +92,28 @@ p {
     background-color: var(--darker-main-color);
     color: var(--main-color);
     border: var(--main-color) 1px solid;
+    cursor: default;
 }
 
-.grid-wrapper>div {
+.grid-wrapper>a>div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.grid-wrapper>div>img {
+.grid-wrapper>div>a>img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 10px;
 }
 
 .grid-wrapper {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: 500px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 400px;
     grid-auto-flow: dense;
 
-}
-
-.grid-wrapper .wide {
-    grid-column: span 2;
-}
-
-.grid-wrapper .tall {
-    grid-column: span 2;
-}
-
-.grid-wrapper .big {
-    grid-column: span 2;
-    grid-row: span 2;
 }
