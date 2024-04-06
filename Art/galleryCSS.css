@@ -66,12 +66,18 @@ p {
     margin-bottom: 20px;
 }
 
-.buttons {
+.buttons-list {
     display: flex;
     justify-content: center;
     gap: 50px;
     padding-bottom: 50px;
 
+}
+
+.active {
+    background-color: var(--darker-main-color);
+    color: var(--main-color);
+    border: var(--main-color) 1px solid;
 }
 
 .grid-wrapper>div {
