@@ -1,14 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: kalam, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--main-color) var(--bg-color);
 }
+
+
+
+:root {
+    --bg-color: #343434;
+    --second-bg-color: #CACACA;
+    --text-color: #FCFAF1;
+    --main-color: #d6b45d;
+    --darker-main-color: #8b7b56;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--main-color);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    font-size: large;
+}
+
 
 html,
 body {
-    background: wheat;
+    background: var(--bg-color);
     padding: 10px;
+    margin-top: 15vh;
 }
 
 img {
@@ -16,6 +46,32 @@ img {
     height: auto;
     vertical-align: middle;
     display: inline-block;
+    border: var(--main-color) 1px solid;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+
+.gallery-info {
+    background-color: var(--darker-main-color);
+    padding: 30px;
+    border-radius: 50px 50px 20px 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 50px;
+
 }
 
 .grid-wrapper>div {
@@ -28,14 +84,14 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .grid-wrapper {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 500px;
     grid-auto-flow: dense;
 
 }
