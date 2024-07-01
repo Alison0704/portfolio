@@ -6,45 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alitronics</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Contact animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- box icon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/31f7e49722.js' crossorigin='anonymous'></script>
 </head>
 
 <body>
-    <div id="background"></div>
+    <video id="background-video" autoplay loop muted src="Assets/Wallpaper.mp4"></video>
     <!-- Header/Navbar section design -->
-    <header>
-        <div class="header">
-            <div id="logo">Alitronics</div>
-            <div class="topnav" id="myTopnav">
-                <a href="#home">Home</a>
-                <a href="#about ">About me</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experiences">Experiences</a>
-                <a href="#contact">Contact Me</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
+    <div class="nav-small">
+        <div>
+            <p class="logo-word">Alitronics</p>
         </div>
-    </header>
-
+        <div>
+            <p class="logo-word">###</p>
+        </div>
+    </div>
+    <div class="nav-large">
+        <div id="logo">
+            <img src="Assets/Logo.png" alt="">
+            <p id="brand-name">Alitronics</p>
+        </div>
+        <div>
+            <a href="#home" class="tab-nav"> <i class="fas fa-home" style='font-size:40px;color: white;'></i></a>
+            <a href="#about" class="tab-nav"> <i class="fas fa-user" style='font-size:40px;color: white;'></i></a>
+            <a href="#skills" class="tab-nav"> <i class="fas fa-cogs" style='font-size:40px;color: white;'></i></a>
+            <a href="#projects" class="tab-nav"> <i class="fas fa-project-diagram"
+                    style='font-size:40px;color: white;'></i></a>
+            <a href="#experiences" class="tab-nav"> <i class="fas fa-briefcase"
+                    style='font-size:40px;color: white;'></i></a>
+            <a href="#contact" class="tab-nav"> <i class="fas fa-envelope" style='font-size:40px;color: white;'></i></a>
+        </div>
+    </div>
     <!-- Home section design -->
     <section class="home" id="home">
-        <div id="home-sections">
+        <div id="home-section">
             <div id="home-content">
+                <img id="home-logo" src="Assets/Logo.png" alt="" width="250px" height="250px">
                 <p id="home-position"> <span class="static"> Aspiring</span></p>
                 <p id="home-position">
-                    Web and Circuit
+                    Robotics and Circuit
                 </p>
-                <p id="home-position"> <span class="static">Developer</span></p>
-                <p id="home-welcome">Welcome to my <span>Portfolio Website</span>!</p>
-                <p id="home-aim">I am looking for an <u>internship</u>:</p>
-                <p id="home-aim">Full-time in Summer2025</p>
+                <p id="home-position"> <span class="static">Engineer</span></p>
+                <p id="home-welcome">Welcome to my </p>
+                <p id="home-welcome"><span>Portfolio Website</span>!</p>
             </div>
-            <div id="home-pic"></div>
+            <div id="home-art"></div>
         </div>
     </section>
 
@@ -66,8 +73,8 @@
                         computing technology.</p>
                 </div>
                 <div class="btn-content">
-                    <a href="#contact"><button class="about-btn">Let's connect!</button></a>
-                    <a href="Mauritius/indexMauritius.html"><button class="about-btn"> My Origins </button></a>
+                    <a href="#contact"><button>Let's connect!</button></a>
+                    <a href="Mauritius/indexMauritius.html"><button> My Origins </button></a>
                 </div>
 
             </div>
@@ -76,117 +83,76 @@
 
     <!-- Skills section design -->
     <section class="skills" id="skills">
-        <h2 class="heading"><span>Skills</span> and <span>Knowledge</span>
-            <div class="skill-content">
-                <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore
-                    et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
-                    aliquam nulla facilisi cras.
-
-                </p>
-                <div class="skills-details">
-                    <div id="Electrical">
-                        <div id="alister-pic">
-                        </div>
-                        <div class="skill-text">
-                            <h3>Electrical Engineering</h3>
-                            <p><span>Skills Highlight:</span></p>
-                            <button class="resume" type="button"
-                                onclick="location.href='Qualifications/resumeELG.html'">Electrical Resume</button>
-                        </div>
-                    </div>
-                    <div id="Software">
-                        <div id="chloe-pic">
-                        </div>
-                        <div class="skill-text">
-                            <h3>Software Engineering</h3>
-                            <p><span>Skills Highlight:</span></p>
-                            <button class="resume" type="button"
-                                onclick="location.href='Qualifications/resumeELG.html'">Software Resume</button>
-                        </div>
-                    </div>
-                    <div id="Music">
-                        <div id="emilian-pic"></div>
-                        <div class="skill-text">
-                            <h3>Music</h3>
-                            <p><span>Skills Highlight:</span></p>
-                            <button class="resume" type="button" onclick="location.href='Music/music.html'">Musical
-                                Gallery</button>
-                        </div>
-                    </div>
-                    <div id="Art">
-                        <div id="eleanor-pic"></div>
-                        <div class="skill-text">
-                            <h3>Art</h3>
-                            <p><span>Skills Highlight:</span></p>
-                            <button class="resume" type="button" onclick="location.href='Art/gallery.html'">Art
-                                Gallery</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- TODO to implement after Brain page is done -->
-                <!-- <button class="resume" type="button" onclick="location.href='Brain/brain.html'">See what
-                    is in my brain</button> -->
+        <h2 class="heading"><span>Skills</span> and <span>Knowledge</span></h2>
+        <div class="skill-content">
+            <div class="skill-component" id="Electrical">
+                <h4><span>Electronics</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eos alias minus provident facilis
+                    deleniti magnam modi ducimus quam doloremque harum voluptates eaque dolorum, dolore perspiciatis
+                    error quas. Commodi, delectus.</p>
+                <button>My Resume</button>
             </div>
+            <div class="skill-component" id="Software">
+                <h4><span>Programming</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eos alias minus provident facilis
+                    deleniti magnam modi ducimus quam doloremque harum voluptates eaque dolorum, dolore perspiciatis
+                    error quas. Commodi, delectus.</p>
+                <button>My Resume</button>
+            </div>
+            <div class="skill-component" id="Music">
+                <h4><span>Music</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eos alias minus provident facilis
+                    deleniti magnam modi ducimus quam doloremque harum voluptates eaque dolorum, dolore perspiciatis
+                    error quas. Commodi, delectus.</p>
+                <button>My Gallery</button>
+            </div>
+            <div class="skill-component" id="Art">
+                <h4><span>Art</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eos alias minus provident facilis
+                    deleniti magnam modi ducimus quam doloremque harum voluptates eaque dolorum, dolore perspiciatis
+                    error quas. Commodi, delectus.</p>
+                <button>My Gallery</button>
+            </div>
+        </div>
     </section>
 
     <!-- Projects section design -->
     <section class="projects" id="projects">
+        <h2 class="heading"><span>Projects</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore
+            et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
+            aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
+            tristique nulla aliquet enim tortor.
+            Eu tincidunt tortor
+            aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
+            tristique nulla aliquet enim tortor.Eu tincidunt tortor
+            aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris.
+        </p>
         <div class="project-content">
-            <h2 class="heading"><span>Projects</span>
-                <p id="general-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore
-                    et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus. Eu tincidunt tortor
-                    aliquam nulla facilisi cras. Sagittis eu volutpat odio facilisis mauris. Sed risus ultricies
-                    tristique nulla aliquet enim tortor.
-                </p>
-                <div class="project-instruction">
-                    <i class="gg-arrow-left"></i>
-                    <p class="instruction">Scroll left and right</p>
-                    <i class="gg-arrow-right"></i>
+            <p class="instruction"><span>Scroll left and right</span></p>
+            <div class="project-list">
+                <div class="project-component">
+                    <h4 class="title"><span>Quartus II to VLSI design</span></h4>
+                    <button>View more</button>
                 </div>
-                <div class="project-list">
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Meet my personas</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Quartus II to VLSI design</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Microwave Amplifier Design</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Optical Equipment Manipulations</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Arduino - Theme: Water Tester</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Web Development Capstones</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Role-based service updates</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
-                    <div class="project-component">
-                        <div id="icon"></div>
-                        <h3 class="title">Games</h3>
-                        <button class="disabled-button">Updating...</button>
-                    </div>
+                <div class="project-component">
+                    <h4 class="title"><span>Microwave Amplifier Design</span></h4>
+                    <button>View more</button>
                 </div>
+                <div class="project-component">
+                    <h4 class="title"><span>Optical Equipment Manipulations</span></h4>
+                    <button>View more</button>
+                </div>
+                <div class="project-component">
+                    <h4 class="title"><span>Arduino - Theme: Water Tester</span></h4>
+                    <button>View more</button>
+                </div>
+                <div class="project-component">
+                    <h4 class="title"><span>Games</span></h4>
+                    <button>View more</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -194,16 +160,17 @@
     <section class="experiences" id="experiences">
         <h2 class="heading">My <span>Experiences</span></h2>
 
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education</h3>
-
+        <div class="row">
+            <div class="column">
+                <h3>Education</h3>
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2020 - 2026</div>
-                            <h3><span>University of Ottawa - BASc Electrical Engineering and BSc Computing Technology -
-                                    Ottawa, ON</span></h3>
+                            <div class="duration"></i>
+                                <p>2020 - 2026</p>
+                            </div>
+                            <h4><span>University of Ottawa - BASc Electrical Engineering and BSc Computing
+                                    Technology - Ottawa, ON</span></h4>
                             <p>Currently pursuing a double degree in Electrical Engineering and Computing Technology
                                 at
                                 the University of Ottawa. I am passionate about technology and I am always looking
@@ -213,9 +180,11 @@
                     </div>
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2012 - 2019</div>
-                            <h3><span>GMD Atchia State College - Cambridge International AS & A Levels - Science Side -
-                                    Port-Louis, Mauritius</span></h3>
+                            <div class="duration"><i class='bx bxs-calendar'></i>
+                                <p>2012 - 2019</p>
+                            </div>
+                            <h4><span>GMD Atchia State College - Cambridge International AS & A Levels - Science Side -
+                                    Port-Louis, Mauritius</span></h4>
                             <p>Completed my secondary education at GMD Atchia State College. I studied the Cambridge
                                 International AS & A Levels in the Science side. Pursed my A level courses: Physics,
                                 Mathematics, Computer Science and my AS level courses: Art and design, General
@@ -223,17 +192,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="education-column">
-                <h3 class="title">Work Experience</h3>
+
+                <h3>Work Experience</h3>
 
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year">
-                                <i class='bx bxs-calendar'></i> 2024 - 2024
+                            <div class="duration">
+                                <p>Jan 2024 - Apr 2024</p>
                             </div>
-                            <h3><span>Teaching Assistant – ITI 1500 – University of Ottawa - Ottawa, ON</span></h3>
+                            <h4><span>Teaching Assistant – ITI 1500 – University of Ottawa - Ottawa, ON</span></h4>
                             <p>Assisted students in understanding the course material, and helped them with their
                                 assignments and projects. I also held office hours to help students with their
                                 questions
@@ -242,11 +210,11 @@
                     </div>
                     <div class="education-content">
                         <div class="content">
-                            <div class="year">
-                                <i class='bx bxs-calendar'></i> 2023 - 2024
+                            <div class="duration">
+                                <p>May 2023 - Current</p>
                             </div>
-                            <h3><span>Project Clerk, Pension and Benefits Assistant – University of Ottawa - Ottawa, ON
-                                </span></h3>
+                            <h4><span>Project Clerk, Pension and Benefits Assistant – University of Ottawa - Ottawa, ON
+                                </span></h4>
                             <p>Assisted the Pension and Benefits team with their daily tasks. I was responsible for
                                 updating the pension and benefits database, and I also helped with the preparation
                                 of
@@ -277,10 +245,11 @@
                     <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 </div>
             </div>
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Send!</button>
-            </div>
+
         </form>
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Send!</button>
+        </div>
     </section>
     <!-- Footer section -->
     <footer class="footer"></footer>
@@ -289,16 +258,7 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+
 </body>
 
 </html>
