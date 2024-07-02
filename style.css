@@ -120,7 +120,8 @@ p span {
     width: 10rem;
     height: 100%;
     z-index: 100;
-    background: var(--bg-color);
+    background: var(--black);
+    border-right: var(--main-color) 3px;
 }
 
 #logo {
@@ -256,7 +257,7 @@ p span {
 }
 
 .project-content {
-    padding-bottom: 5rem;
+    padding-bottom: 5re;
 }
 
 .project-list {
@@ -389,7 +390,7 @@ footer {
     section {
         overflow-x: hidden;
         margin: 2rem 7rem;
-        padding: 2rem;
+        padding: 5rem;
 
     }
 
@@ -400,15 +401,17 @@ footer {
 
     h3 {
         font-size: 3rem;
+        text-align: center;
     }
 
     h4 {
         font-size: 2rem;
-        color: var(--main-color);
+        text-align: center;
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        text-align: center;
     }
 
     /* Nav bar */
@@ -419,11 +422,11 @@ footer {
         left: 0;
         width: 100%;
         z-index: 100;
-        background-color: black;
-        justify-content: space-between;
-        padding: 1rem;
+        background-color: var(--black);
+        justify-content: center;
+        padding: 2rem;
         align-items: center;
-
+        border-bottom: var(--main-color) dashed 1px;
     }
 
     .nav-large {
@@ -434,11 +437,10 @@ footer {
     #home-logo {
         position: absolute;
         display: flex;
-        padding-bottom: 3rem;
         z-index: -1;
-        opacity: 40%;
-        width: 90vw;
-        height: 100vh;
+        opacity: 25%;
+        width: 60%;
+        height: 80vh;
     }
 
     #home-content {
@@ -466,20 +468,32 @@ footer {
     }
 
     #myImg {
-        width: 40%;
-        height: 40%;
+        width: 25%;
+        height: 25%;
     }
 
     /* Skills section*/
     .skill-content {
         overflow-y: hidden;
+        width: 100%;
     }
 
+    .skill-component {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    /* Project section */
+    .project-list .project-component {
+        min-width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 780px) {
     section {
         margin: 1rem;
+        padding: 1rem;
     }
 
     h2 {
@@ -512,14 +526,19 @@ footer {
         height: 40vh;
     }
 
+    /* Project section */
+    .project-list .project-component {
+        min-width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 470px) {
 
     section {
         overflow-x: hidden;
-        margin: 0;
-        padding: 1.5rem;
+        margin: 2rem;
+        padding: 1rem;
     }
 
     h2 {
@@ -557,12 +576,16 @@ footer {
     }
 
     /* Project section */
-
-    .project-component {
-        width: 30vw;
-        height: 30vh;
+    .project-list .project-component {
+        min-width: 150px;
+        height: 150px;
     }
 
+    .instruction {
+        padding-top: 3rem;
+    }
+
+    /* Contact section */
     input,
     input::placeholder {
         font: 0.5rem !important;
@@ -571,4 +594,5 @@ footer {
     input::-ms-input-placeholder {
         font: 5rem !important;
     }
+
 }
