@@ -56,6 +56,16 @@ button:hover {
     color: var(--bg-color);
 }
 
+.disable {
+    cursor: not-allowed;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+.disable:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
 
 h2 {
     font-size: 6rem;
@@ -95,6 +105,15 @@ h4 span {
 
 p span {
     color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:hover {
+    color: var(--bg-color);
 }
 
 /* Custom Classes starts here*
