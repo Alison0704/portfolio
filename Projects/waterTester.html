@@ -32,45 +32,41 @@
         }
 
         html {
-            font-size: 70%;
+            font-size: 80%;
             overflow-x: hidden;
         }
 
         body {
             background-color: var(--colour4);
             color: var(--colour1);
-            font-family: 'Arial';
+            border: #37B7C3 5px;
+            border-style: groove;
         }
 
         h1 {
             font-size: 4rem;
             font-weight: 700;
-            z-index: 1;
         }
 
         h2 {
             font-size: 2.5rem;
             font-weight: 700;
-            z-index: 1;
         }
 
         h3 {
             font-size: 1.25rem;
             font-weight: 700;
-            z-index: 1;
         }
 
         div {
-            padding-bottom: 50px;
-
+            padding: 30px;
         }
+
 
         #welcome-section {
             background-color: var(--colour2);
             color: var(--colour4);
-            text-align: center;
             top: 0;
-            width: 100%;
             height: 70vh;
             display: flex;
             justify-content: space-evenly;
@@ -78,26 +74,14 @@
             flex-direction: column;
         }
 
-        #water-pattern {
-            width: 100%;
-            height: 70vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0.5;
-            opacity: 0.3;
-        }
-
         #team-member {
             display: flex;
             justify-content: end;
-            margin: 20px 0;
         }
 
         #team-member p {
             background-color: var(--colour3);
             color: var(--colour4);
-            display: inline;
             padding: 10px;
         }
 
@@ -111,16 +95,20 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 20px 0;
         }
 
         #project-description-content {
             display: flex;
             justify-content: center;
             flex-direction: row;
-            margin: 20px 0;
-            gap: 20px;
-            padding: 30px;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
         }
 
         #project-photos {
@@ -128,7 +116,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            margin: 20px 0;
             gap: 30px;
         }
 
@@ -141,15 +128,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 20px 0;
-        }
-
-        #project-demo iframe {
-            margin: 20px 0;
-        }
-
-        #project-demo p {
-            margin: 20px 50px;
         }
 
         #lesson-learnt {
@@ -157,7 +135,80 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 20px 50px;
+        }
+
+        @media screen and (max-width: 1500px) {
+
+            #project-photos img {
+                width: 30%;
+            }
+
+        }
+
+        @media screen and (max-width: 900px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            #project-description-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #project-description-content img {
+                width: 60%;
+                height: 25vh;
+            }
+
+            #project-photos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #project-photos img {
+                width: 70%;
+                height: 25vh;
+            }
+
+            #project-demo iframe {
+                width: 80%;
+            }
+
+        }
+
+        @media screen and (max-width: 400px) {
+            div {
+                font-size: 5px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            #demo-vid {
+                display: none;
+            }
+
         }
     </style>
 </head>
@@ -175,24 +226,28 @@
     </div>
     <div id="project-description">
         <h2>Project Description</h2>
-        <div id="project-description-content">
+        <div id="project-description-content" class="text">
             <img height="300px" width="500px" src="Assets/WATER - concept.png" alt="">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum. </p>
+            <p> This project aims to design a water analyzer that uses Arduino technology to measure key water
+                quality
+                indicators, such as temperature, pH, and total dissolved solids (TDS). This device provides a rapid
+                and
+                precise response on the potability of water, which is crucial for public health and the environment.
+            </p>
+            <p> With its intuitive user interface, which includes a computer screen display and color coding system,
+                the
+                analyzer simplifies water quality monitoring and makes it accessible to a wider audience. Testing to
+                date has shown the analyzer to be reliable and compliant with regulatory agency standards.</p>
+            <p>The implementation of this project has the potential to significantly transform the way individuals
+                and
+                communities assess the quality of their water, providing a valuable tool for environmental education
+                and
+                awareness. The continuous development of this prototype has a target to improve functionality
+                and
+                consider mass production to facilitate distribution and accessibility. This project promises not
+                only to
+                improve public health standards but also to serve as an educational resource for future generations.
+            </p>
         </div>
     </div>
     <div id="project-photos">
@@ -203,47 +258,70 @@
 
     <hr>
 
-    <div id="project-demo">
-        <h2>Project Demo</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit
-            anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit
-            anim id est laborum. </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vMlDdeUzurE" frameborder="0"
+    <div id="project-demo" class="text">
+        <h2>Project Concept and Demo</h2>
+        <h3>Arduino Coding</h3>
+        <p>In order for the Arduino to be able to interact between the sensors and the computer, we had to do the
+            coding
+            on the Arduino integrated development environment.
+            In summary, the code manipulates the sensor values ​​in order to have useful data. The latter will then
+            be
+            compared to ranges of values ​​that we consider pleasant to drink.
+            For our project, we want to have a temperature between 10 and 25 degrees Celsius, a pH level between 6.5
+            and
+            8.5, and to have total dissolved solids between 50 and 250.
+            The temperature data was processed directly using the DallasTemperature library and displays the value
+            in
+            celsius.
+            For the others, we had to use a buffer of a set of values ​​to get an average. And this average is
+            converted
+            from analog to millivolt and then calibrated to have useful values. Depending on the data validations,
+            LED lights will turn on and if they are all green, a blue LED light will turn on and activate a buzzer.
+            In order to be able to further manipulate the data on the website, a number from 0 to 3 is added in
+            series with the sensor values.</p>
+        <h3>Connecting wires to Arduino UNO</h3>
+        <p>Instead of getting lost in the wiring,
+            we used Tinkercad to make virtually all the connections. 200Ω resistors are placed in series with the
+            LEDs and buzzer so they don't burn out.</p>
+        <h3>Coding the website for display</h3>
+        <p>Initially, we intended to
+            bought an LCD but we no longer had a PIN INPUT on the arduino UNO unless we bought another one. But to
+            reduce the cost, we decided to display it on a website. For this, we used VScode as a code editor and
+            the HTML, CSS and Javascript programming language.</p>
+        <h3>Connection Arduino and the website</h3>
+        <p>For the connection between the Arduino and the website, we used the serial port. The data is sent in
+            series and the website receives it and displays it in real time. The data is then processed and
+            displayed in a more user-friendly way. We used node.js to listen to the IDE's serial monitor and pass it
+            into a Javascript file. And using HTML, CSS and this Javascript file, the values ​​are displayed on the
+            website 'localhost:3000'.</p>
+        <p></p>
+        <p>Click this: <a style="text-decoration: underline;" href="https://www.youtube.com/watch?v=vMlDdeUzurE">
+                Demo</a></p>
+        <iframe id="demo-vid" width="560" height="315" src="https://www.youtube.com/embed/vMlDdeUzurE" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
-    <div id="lesson-learnt">
+    <div id="lesson-learnt" class="text">
         <h2>Lesson Learnt</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit
-            anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit
-            anim id est laborum. </p>
-    </div>
+        <h3>In Class</h3>
+        <div class="list">
+            <li>Operational Amplifier</li>
+            <li>Oscillators</li>
+            <li>Filtres</li>
+            <li>Analog to Digital convertors, Digital to Analog convertors,</li>
+            <li>Electrical convertors: AC -> DC, DC -> DC, DC -> AC, AC -> AC,</li>
+            <li>Solar panel simulator</li>
+        </div>
+
+        <h3>Project</h3>
+        <div class="list">
+            <li>A complicated plan leads to small/zero execution on a time crunch </li>
+            <li>Teamwork is essential</li>
+            <li>Communication is key</li>
+            <li>Be open to new ideas</li>
+            <li>Be open to criticism</li>
+            <li>Be open to failure</li>
+        </div>
 </body>
 
-</html>
+</html
